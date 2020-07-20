@@ -1,4 +1,5 @@
-# zcode v0.0023
+# zcode
+*version:  v0.0023*
 
 Online Open Source Text / Code editor, It's like Vscode but for the web.
 
