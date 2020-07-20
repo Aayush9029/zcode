@@ -19,9 +19,10 @@
 
 .save {
   grid-column: 2;
-  padding: 20px;
   background: wheat;
-  width: 20px;
+  font-size: small;
+  width: 80px;
+  height: 50px;
 }
 
 .clear {
