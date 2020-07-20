@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="codemirror/theme/dracula.css" />
 
     <link rel="stylesheet" href="codemirror/lib/codemirror.css" />
-    <link rel="stylesheet" href="codemirror/theme/dracula.css" />
     <link rel="stylesheet" href="custom.css" />
     <link rel="stylesheet" href="codemirror/addon/hint/show-hint.css" />
     <link
@@ -29,7 +29,7 @@
       <div class="theme">
         Theme:
         <div class="select">
-          <select name="slct" id="selectTheme">
+          <select name="slct" id="selectTheme" onchange="changeTheme()">
             <option selected disabled>Select color theme</option>
           </select>
         </div>
@@ -80,7 +80,7 @@ function getCompletions(token, context) {
     <script src="codemirror/mode/javascript/javascript.js"></script>
 
     <script src="data.js"></script>
-    <script src="codeBox.js"></script>
     <script src="main.js"></script>
+    <script src="codeBox.js"></script>
   </body>
 </html>

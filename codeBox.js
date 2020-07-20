@@ -45,4 +45,4 @@ function synonyms(cm, option) {
   });
 }
 
-editor.display.wrapper.className = "CodeMirror cm-s-dracula custom";
+editor.display.wrapper.className = "CodeMirror custom cm-s-" + themeName;
