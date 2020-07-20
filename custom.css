@@ -1,0 +1,100 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.settings {
+  padding: 1rem;
+  background: #2f344d;
+  display: grid;
+}
+
+.theme {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  font-weight: 100;
+  color: white;
+  grid-column: 1;
+}
+
+.save {
+  grid-column: 2;
+  padding: 20px;
+  background: wheat;
+  width: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Reset Select */
+select {
+  font-size: 1em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: none;
+  outline-style: none;
+  box-shadow: none;
+  border: none !important;
+  background: #2c3e50;
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 15em;
+  height: 2em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+select {
+  flex: 1;
+  padding: 0 0.5em;
+  color: #fff;
+  cursor: pointer;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: -0.5em;
+  right: 0;
+  padding: 0 0.5em;
+  background: #34495e;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  -o-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: #00a2b8;
+}
+
+/* MATCH HIGHLIGHTER CSS */
+.CodeMirror {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.CodeMirror-focused .cm-matchhighlight {
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+.cm-matchhighlight {
+  background-color: rgba(136, 255, 215, 0.315);
+}
+.CodeMirror-selection-highlight-scrollbar {
+  background-color: rgba(0, 128, 0, 0.589);
+}
